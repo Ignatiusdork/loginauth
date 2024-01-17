@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         }
 
         if (is_email_registered($pdo, $email)) {
-            $errors["email_ised"] = "Email already registered";
+            $errors["email_used"] = "Email already registered";
         }
 
         require_once 'config_sessions.inc.php';
